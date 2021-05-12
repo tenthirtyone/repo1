@@ -49,17 +49,17 @@ const Login = (props) => {
         <Button
           variant="contained"
           color="primary"
-        //   onClick={(e) => {
-        //     userService
-        //       .login(email, password)
-        //       .then((data) => {
-        //         console.log(data);
-        //         window.location.href = "/";
-        //       })
-        //       .catch((err) => {
-        //         console.log(err);
-        //       });
-        //   }}
+          onClick={(e) => {
+            userService
+              .login(email, password)
+              .then((data) => {
+                console.log(data);
+                window.location.href = "/";
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          }}
         >
           Login
         </Button>

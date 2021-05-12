@@ -55,20 +55,20 @@ const Register = (props) => {
         <Button
           variant="contained"
           color="primary"
-        //   onClick={(e) => {
-        //     userService
-        //       .register(name, email, password)
-        //       .then((data) => {
-        //         console.log(data);
-        //         props.history.push("/login");
-        //       })
-        //       .catch((err) => {
-        //         console.log(err);
-        //         toast.error(err.response.data, {
-        //           position: toast.POSITION.TOP_LEFT,
-        //         });
-        //       });
-        //   }}
+          onClick={(e) => {
+            userService
+              .register(name, email, password)
+              .then((data) => {
+                console.log(data);
+                props.history.push("/login");
+              })
+              .catch((err) => {
+                console.log(err);
+                toast.error(err.response.data, {
+                  position: toast.POSITION.TOP_LEFT,
+                });
+              });
+          }}
         >
           Register
         </Button>
